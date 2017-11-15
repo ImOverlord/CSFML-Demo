@@ -33,7 +33,7 @@ void window_close(sfRenderWindow *window)
 	sfRenderWindow_close(window);
 	exit(0);
 }
-void main()
+void example_main()
 {
 	sfVideoMode mode = {width, height, 32};
 	sfRenderWindow* window;
@@ -46,6 +46,7 @@ void main()
 		}
 		sfRenderWindow_display(window);
 	}
+	sfRenderWindow_clear(window, sfBlack);
 	sfRenderWindow_destroy(window);
 	return (0);
 }
