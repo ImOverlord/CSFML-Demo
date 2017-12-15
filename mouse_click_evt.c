@@ -44,9 +44,9 @@ void example_main()
 		while (sfRenderWindow_pollEvent(window, &event)) {
 			analyse_events(window, event);
 		}
+		sfRenderWindow_clear(window, sfBlack);
 		sfRenderWindow_display(window);
 	}
-	sfRenderWindow_clear(window, sfBlack);
 	sfRenderWindow_destroy(window);
 	return (0);
 }
